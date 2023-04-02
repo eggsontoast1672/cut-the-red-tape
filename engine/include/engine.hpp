@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <SDL2/SDL.h>
 
 #define SCREEN_WIDTH 800

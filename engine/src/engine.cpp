@@ -1,4 +1,3 @@
-#include <SDL2/SDL_video.h>
 #include <engine.hpp>
 
 namespace engine {
@@ -32,9 +31,8 @@ namespace engine {
     if (context == nullptr)
       engine::exit_sdl("Failed to greate OpenGL context");
 
-    GLenum error = glewInit();
-    if (error != GLEW_OK)
-      engine::exit("Failed to initialize glew");
+    if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress))
+      engine::exit("Failed to initialize glad");
 
     bool quit = false;
     while (!quit) {
