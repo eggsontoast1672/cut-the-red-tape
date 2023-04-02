@@ -1,7 +1,7 @@
 add_library(
   engine
-  src/engine/draw.cpp
   src/engine/general.cpp
+  src/engine/graphics.cpp
   src/engine/math.cpp
   src/glad/glad.c
 )
