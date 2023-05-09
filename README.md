@@ -26,7 +26,7 @@ have a C++ compiler, CMake, pkg-config, and the SDL2 development files
 installed.
 
 On Ubuntu, the command below should get you into shape. You may have to run it
-with super user privilages. If you're running an OS other than that, I assume
+with super user privileges. If you're running an OS other than that, I assume
 you can handle yourself in the package-downloading department.
 
 ```bash
